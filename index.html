@@ -220,7 +220,7 @@
                     </a>
                 </li>
                 <li class="bold">
-                  <a href="alumnos.html" class="waves-effect waves-cyan">
+                  <a href="alumnos.php" class="waves-effect waves-cyan">
                       <i class="material-icons">cast</i>
                       <span class="nav-text">Alumnos</span>
                     </a>

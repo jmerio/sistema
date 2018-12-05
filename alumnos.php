@@ -5,12 +5,20 @@ require_once("DbAcad.php");
 <!--work collections start-->
 	<div id="work-collections">
 		<div class="container">
+		<table class="highlight">			
+			<tr>
+				<td><a href="ingresoalumno.php">Ingresar</a></td>
+			</tr>
+			<tr>
+				<td><a href="actualizar_alumno.php">Actualizar</a></td>
+			</tr>
+		</table>
 		  <table class="highlight">
 			<thead>
 			  <tr>
 				  <th>Carnet</th>
 				  <th>Nombre</th>
-				  <th>Grado</th>
+				  <th>Operaciones</th>
 			  </tr>
 			</thead>
 			<tbody>
@@ -20,7 +28,7 @@ require_once("DbAcad.php");
 
 				if ($result->num_rows > 0) {
 					while($row = $result->fetch_assoc()) {
-						echo "<tr><td>" . $row["Carnet"]. " </td><td>" . $row["Nombres"]. "<td></tr>";
+						echo "<tr><td>" . $row["Carnet"]. " </td><td>" . $row["Nombres"]. "<td> <td><a href=\"administrar_alumnos.php?id=" . $row["Carnet"]. "&accion=a\">Actualizar</a> - <a href=\"administrar_alumnos.php?id=" . $row["Carnet"]. "&accion=e\">Eliminar</a>   </td></tr>";
 					}
 				}
 				?>
