@@ -25,7 +25,7 @@ require_once("DbAcad.php");
 
 				if ($result->num_rows > 0) {
 					while($row = $result->fetch_assoc()) {
-						echo "<tr><td>" . $row["id_anio_lectivo"]. " </td><td>" . $row["anio_lectivocol"]. "<td> <td><a href=\"administrar_aniolectivos.php?id=" . $row["id_anio_lectivo"]. "&accion=a\">Actualizar</a> - <a href=\"administrar_aniolectivos.php?id=" . $row["id_anio_lectivo"]. "&accion=e\">Eliminar</a>   </td></tr>";
+						echo "<tr><td>" . $row["id_anio_lectivo"]. " </td><td>" . $row["anio_lectivocol"]. "<td> <td><a href=\"administrar_aniolectivo.php?id=" . $row["id_anio_lectivo"]. "&accion=a\">Actualizar</a> - <a href=\"administrar_aniolectivo.php?id=" . $row["id_anio_lectivo"]. "&accion=e\">Eliminar</a>   </td></tr>";
 					}
 				}
 				?>
